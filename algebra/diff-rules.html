@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Правила дифференцирования функций">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Правила дифференцирования | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Правила дифференцирования</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Дифференцирование — операция нахождения производной функции. Производная показывает скорость изменения функции в данной точке.</p>
+            </div>
+
+            <h3>Основные правила</h3>
+            <div class="theorem-box">
+                <strong>Производная суммы и разности</strong>
+                <p>Производная суммы (разности) двух функций равна сумме (разности) их производных.</p>
+                $$ (u \pm v)' = u' \pm v' $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Вынесение постоянного множителя</strong>
+                <p>Постоянный множитель можно выносить за знак производной.</p>
+                $$ (C \cdot u)' = C \cdot u' $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Производная произведения</strong>
+                <p>Производная произведения двух функций равна сумме произведения производной первой функции на вторую и произведения первой функции на производную второй.</p>
+                $$ (u \cdot v)' = u'v + uv' $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Производная частного</strong>
+                <p>Производная частного двух функций равна дроби, в числителе которой разность произведения производной числителя на знаменатель и произведения числителя на производную знаменателя, а в знаменателе — квадрат знаменателя.</p>
+                $$ \left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}, \quad v \neq 0 $$
+            </div>
+
+            <h3>Производная сложной функции</h3>
+            <div class="theorem-box">
+                <strong>Цепное правило</strong>
+                <p>Если функция \(y = f(g(x))\) является композицией двух функций, то её производная равна произведению производной внешней функции на производную внутренней функции.</p>
+                $$ (f(g(x)))' = f'(g(x)) \cdot g'(x) $$
+            </div>
+
+            <div class="formula-block">
+                <p>Пример 1:</p>
+                $$ (\sin(3x))' = \cos(3x) \cdot 3 = 3\cos(3x) $$
+                
+                <p>Пример 2:</p>
+                $$ ((2x+1)^5)' = 5(2x+1)^4 \cdot 2 = 10(2x+1)^4 $$
+                
+                <p>Пример 3:</p>
+                $$ (\ln(x^2+1))' = \frac{1}{x^2+1} \cdot 2x = \frac{2x}{x^2+1} $$
+            </div>
+
+            <h3>Производная степенно-показательной функции</h3>
+            <div class="theorem-box">
+                <strong>Функция вида \(u^v\)</strong>
+                <p>Если и основание, и показатель степени являются функциями от \(x\), используется логарифмическое дифференцирование.</p>
+                $$ (u^v)' = u^v \cdot \left(v' \ln u + v \cdot \frac{u'}{u}\right) $$
+            </div>
+
+            <h3>Производная обратной функции</h3>
+            <div class="theorem-box">
+                <strong>Правило</strong>
+                <p>Если \(y = f(x)\) имеет обратную функцию \(x = f^{-1}(y)\), то:</p>
+                $$ (f^{-1}(y))' = \frac{1}{f'(x)} $$
+            </div>
+
+            <h3>Логарифмическое дифференцирование</h3>
+            <div class="info-box">
+                <strong>Применение</strong>
+                <p>Используется для дифференцирования сложных произведений, частных и степенно-показательных функций.</p>
+                <ul class="props">
+                    <li>Прологарифмировать обе части равенства</li>
+                    <li>Продифференцировать полученное равенство</li>
+                    <li>Выразить \(y'\) из полученного уравнения</li>
+                </ul>
+            </div>
+
+            <h3>Производные высших порядков</h3>
+            <div class="formula-block">
+                <p>Вторая производная:</p>
+                $$ f''(x) = (f'(x))' $$
+                
+                <p>Третья производная:</p>
+                $$ f'''(x) = (f''(x))' $$
+                
+                <p>n-я производная:</p>
+                $$ f^{(n)}(x) = (f^{(n-1)}(x))' $$
+            </div>
+
+            <h3>Примеры применения правил</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Произведение на константу</strong>
+                    <div>\( (5x^3)' = 5 \cdot 3x^2 = 15x^2 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма функций</strong>
+                    <div>\( (x^2 + \sin x)' = 2x + \cos x \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Произведение функций</strong>
+                    <div>\( (x \cdot e^x)' = 1 \cdot e^x + x \cdot e^x = e^x(1+x) \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Частное функций</strong>
+                    <div>\( \left(\frac{x}{\sin x}\right)' = \frac{1 \cdot \sin x - x \cdot \cos x}{\sin^2 x} \)</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

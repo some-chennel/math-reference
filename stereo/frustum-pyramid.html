@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства усечённой пирамиды">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Усечённая пирамида | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Усечённая пирамида</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Усечённая пирамида — часть пирамиды, заключённая между основанием и секущей плоскостью, параллельной основанию. Имеет два основания — нижнее и верхнее.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Площадь нижнего основания</strong>
+                    <div>\(S_1\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь верхнего основания</strong>
+                    <div>\(S_2\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Апофема</strong>
+                    <div>\(h_a\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр нижнего основания</strong>
+                    <div>\(P_1\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр верхнего основания</strong>
+                    <div>\(P_2\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Объём</strong>
+                    <div>\(V\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Объём усечённой пирамиды:</p>
+                $$ V = \frac{1}{3} h (S_1 + S_2 + \sqrt{S_1 S_2}) $$
+                
+                <p>Площадь боковой поверхности (для правильной усечённой пирамиды):</p>
+                $$ S_{бок} = \frac{1}{2} (P_1 + P_2) \cdot h_a $$
+                
+                <p>Площадь полной поверхности:</p>
+                $$ S_{полн} = S_{бок} + S_1 + S_2 $$
+            </div>
+
+            <h3>Правильная усечённая пирамида</h3>
+            <div class="theorem-box">
+                <strong>Определение</strong>
+                <p>Усечённая пирамида, полученная из правильной пирамиды. Боковые грани — равные равнобедренные трапеции.</p>
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Боковые грани</strong>
+                    <div>Равные равнобедренные трапеции</div>
+                </div>
+                <div class="property-item">
+                    <strong>Апофема</strong>
+                    <div>Высота боковой грани (трапеции)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Боковое ребро</strong>
+                    <div>Отрезок, соединяющий соответствующие вершины оснований</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>Перпендикуляр между плоскостями оснований</div>
+                </div>
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="theorem-box">
+                <strong>Подобие оснований</strong>
+                <p>Основания усечённой пирамиды подобны. Отношение площадей оснований равно квадрату коэффициента подобия.</p>
+                $$ \frac{S_2}{S_1} = k^2 $$
+                $$ \frac{P_2}{P_1} = k $$
+            </div>
+
+            <div class="formula-block">
+                <p>Апофема через высоту:</p>
+                $$ h_a = \sqrt{h^2 + \left(\frac{a_1 - a_2}{2}\right)^2} $$
+                
+                <p>Боковое ребро через высоту:</p>
+                $$ l = \sqrt{h^2 + (R_1 - R_2)^2} $$
+                
+                <p>где \(a_1, a_2\) — стороны оснований, \(R_1, R_2\) — радиусы описанных окружностей.</p>
+            </div>
+
+            <h3>Свойства усечённой пирамиды</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Боковые рёбра</strong>
+                    <div>Продолжения боковых рёбер пересекаются в одной точке</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагональное сечение</strong>
+                    <div>Трапеция</div>
+                </div>
+                <div class="property-item">
+                    <strong>Параллельное сечение</strong>
+                    <div>Подобно основаниям</div>
+                </div>
+                <div class="property-item">
+                    <strong>Отношение объёмов</strong>
+                    <div>\( \frac{V_{усеч}}{V_{полн}} = 1 - k^3 \)</div>
+                </div>
+            </div>
+
+            <h3>Четырёхугольная усечённая пирамида</h3>
+            <div class="formula-block">
+                <p>Объём (основания — квадраты со сторонами \(a_1, a_2\)):</p>
+                $$ V = \frac{1}{3} h (a_1^2 + a_2^2 + a_1 a_2) $$
+                
+                <p>Площадь боковой поверхности:</p>
+                $$ S_{бок} = 2(a_1 + a_2) \cdot h_a $$
+                
+                <p>Площадь полной поверхности:</p>
+                $$ S_{полн} = S_{бок} + a_1^2 + a_2^2 $$
+            </div>
+
+            <h3>Применение</h3>
+            <div class="info-box">
+                <strong>Где встречается усечённая пирамида</strong>
+                <ul class="props">
+                    <li>Архитектурные сооружения (башни, колонны)</li>
+                    <li>Ёмкости и резервуары</li>
+                    <li>Детали машин и механизмов</li>
+                    <li>Предметы дизайна и мебели</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства усечённого конуса">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Усечённый конус | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Усечённый конус</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Усечённый конус — часть конуса, заключённая между основанием и секущей плоскостью, параллельной основанию. Имеет два круглых основания разного радиуса.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус нижнего основания</strong>
+                    <div>\(R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус верхнего основания</strong>
+                    <div>\(r\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Образующая</strong>
+                    <div>\(l\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь боковой поверхности</strong>
+                    <div>\(S_{бок}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь полной поверхности</strong>
+                    <div>\(S_{полн}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Объём</strong>
+                    <div>\(V\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Площадь боковой поверхности:</p>
+                $$ S_{бок} = \pi (R + r) l $$
+                
+                <p>Площадь полной поверхности:</p>
+                $$ S_{полн} = S_{бок} + \pi R^2 + \pi r^2 = \pi (R + r) l + \pi (R^2 + r^2) $$
+                
+                <p>Объём усечённого конуса:</p>
+                $$ V = \frac{1}{3} \pi h (R^2 + r^2 + Rr) $$
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="theorem-box">
+                <strong>Теорема Пифагора для усечённого конуса</strong>
+                <p>В осевом сечении образуется прямоугольная трапеция. Образующая связана с высотой и радиусами:</p>
+                $$ l^2 = h^2 + (R - r)^2 $$
+                $$ l = \sqrt{h^2 + (R - r)^2} $$
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Образующая через высоту</strong>
+                    <div>\( l = \sqrt{h^2 + (R - r)^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота через образующую</strong>
+                    <div>\( h = \sqrt{l^2 - (R - r)^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус через образующую</strong>
+                    <div>\( R = r + \sqrt{l^2 - h^2} \)</div>
+                </div>
+            </div>
+
+            <h3>Сечения усечённого конуса</h3>
+            <div class="theorem-box">
+                <strong>Осевое сечение</strong>
+                <p>Сечение плоскостью, проходящей через ось конуса, является равнобедренной трапецией.</p>
+                $$ S_{осев} = (R + r) \cdot h $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Поперечное сечение</strong>
+                <p>Сечение плоскостью, перпендикулярной оси, является кругом.</p>
+                $$ S_{попер} = \pi \rho^2 $$
+                <p>где \(\rho\) — радиус сечения на данной высоте.</p>
+            </div>
+
+            <h3>Развёртка усечённого конуса</h3>
+            <div class="formula-block">
+                <p>Развёртка боковой поверхности — часть кольцевого сектора:</p>
+                $$ \text{Длина внешней дуги} = 2\pi R $$
+                $$ \text{Длина внутренней дуги} = 2\pi r $$
+                $$ \text{Угол сектора} = \frac{360^\circ (R - r)}{l} $$
+            </div>
+
+            <h3>Свойства усечённого конуса</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Основания</strong>
+                    <div>Параллельные круги</div>
+                </div>
+                <div class="property-item">
+                    <strong>Образующие</strong>
+                    <div>Равны и наклонены под одинаковым углом</div>
+                </div>
+                <div class="property-item">
+                    <strong>Ось конуса</strong>
+                    <div>Проходит через центры оснований</div>
+                </div>
+                <div class="property-item">
+                    <strong>Продолжение образующих</strong>
+                    <div>Пересекаются в вершине полного конуса</div>
+                </div>
+            </div>
+
+            <h3>Соотношения с полным конусом</h3>
+            <div class="formula-block">
+                <p>Отношение радиусов:</p>
+                $$ k = \frac{r}{R} $$
+                
+                <p>Отношение объёмов:</p>
+                $$ \frac{V_{усеч}}{V_{полн}} = 1 - k^3 $$
+                
+                <p>Отношение площадей боковой поверхности:</p>
+                $$ \frac{S_{усеч}}{S_{полн}} = 1 - k^2 $$
+            </div>
+
+            <h3>Применение</h3>
+            <div class="info-box">
+                <strong>Где встречается усечённый конус</strong>
+                <ul class="props">
+                    <li>Вёдра, кастрюли, баки</li>
+                    <li>Архитектурные элементы (башни, колонны)</li>
+                    <li>Детали машин (шкивы, переходники)</li>
+                    <li>Абажуры и светильники</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

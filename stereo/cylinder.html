@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства цилиндра">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Цилиндр | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Цилиндр</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Цилиндр — геометрическое тело, ограниченное цилиндрической поверхностью и двумя параллельными плоскостями, пересекающими её. Круглый цилиндр — тело вращения, полученное вращением прямоугольника вокруг одной из его сторон.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус основания</strong>
+                    <div>\(R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Образующая</strong>
+                    <div>\(l = h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь основания</strong>
+                    <div>\(S_{осн}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Боковая поверхность</strong>
+                    <div>\(S_{бок}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Полная поверхность</strong>
+                    <div>\(S_{полн}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Объём</strong>
+                    <div>\(V\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Площадь основания (круг):</p>
+                $$ S_{осн} = \pi R^2 $$
+                
+                <p>Площадь боковой поверхности:</p>
+                $$ S_{бок} = 2\pi R h $$
+                
+                <p>Площадь полной поверхности:</p>
+                $$ S_{полн} = S_{бок} + 2S_{осн} = 2\pi R h + 2\pi R^2 = 2\pi R(h + R) $$
+                
+                <p>Объём цилиндра:</p>
+                $$ V = S_{осн} \cdot h = \pi R^2 h $$
+            </div>
+
+            <h3>Сечения цилиндра</h3>
+            <div class="theorem-box">
+                <strong>Осевое сечение</strong>
+                <p>Сечение цилиндра плоскостью, проходящей через ось цилиндра, является прямоугольником со сторонами \(2R\) и \(h\).</p>
+                $$ S_{осев} = 2R \cdot h $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Поперечное сечение</strong>
+                <p>Сечение цилиндра плоскостью, перпендикулярной оси, является кругом, равным основанию.</p>
+                $$ S_{попер} = \pi R^2 $$
+            </div>
+
+            <div class="info-box">
+                <strong>Наклонное сечение</strong>
+                <p>Сечение цилиндра плоскостью, наклонной к оси, является эллипсом.</p>
+            </div>
+
+            <h3>Свойства цилиндра</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Основания</strong>
+                    <div>Равны и параллельны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Образующие</strong>
+                    <div>Параллельны и равны высоте</div>
+                </div>
+                <div class="property-item">
+                    <strong>Ось цилиндра</strong>
+                    <div>Проходит через центры оснований</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус</strong>
+                    <div>Одинаков во всех сечениях, параллельных основанию</div>
+                </div>
+                <div class="property-item">
+                    <strong>Развёртка</strong>
+                    <div>Прямоугольник со сторонами \(2\pi R\) и \(h\)</div>
+                </div>
+            </div>
+
+            <h3>Вписанные и описанные фигуры</h3>
+            <div class="formula-block">
+                <p>Призма, вписанная в цилиндр:</p>
+                $$ V_{призмы} = S_{осн.призмы} \cdot h $$
+                
+                <p>Призма, описанная около цилиндра:</p>
+                $$ S_{бок.призмы} = P_{осн} \cdot h $$
+                
+                <p>Куб, вписанный в цилиндр:</p>
+                $$ d_{куба} = 2R = h $$
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус через объём</strong>
+                    <div>\( R = \sqrt{\frac{V}{\pi h}} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота через объём</strong>
+                    <div>\( h = \frac{V}{\pi R^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус через площадь</strong>
+                    <div>\( R = \frac{S_{бок}}{2\pi h} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота через площадь</strong>
+                    <div>\( h = \frac{S_{бок}}{2\pi R} \)</div>
+                </div>
+            </div>
+
+            <h3>Применение</h3>
+            <div class="info-box">
+                <strong>Где встречается цилиндр</strong>
+                <ul class="props">
+                    <li>Технические детали (валы, трубы, поршни)</li>
+                    <li>Архитектурные элементы (колонны, башни)</li>
+                    <li>Ёмкости (банки, бочки, резервуары)</li>
+                    <li>Природные объекты (стволы деревьев)</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

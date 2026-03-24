@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства призмы">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Призма | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Призма</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Призма — многогранник, две грани которого (основания) — равные многоугольники, лежащие в параллельных плоскостях, а остальные грани (боковые) — параллелограммы. Прямая призма — призма, у которой боковые рёбра перпендикулярны основаниям.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Площадь основания</strong>
+                    <div>\(S_{осн}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь боковой поверхности</strong>
+                    <div>\(S_{бок}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь полной поверхности</strong>
+                    <div>\(S_{полн}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Объём</strong>
+                    <div>\(V\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр основания</strong>
+                    <div>\(P\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Объём призмы:</p>
+                $$ V = S_{осн} \cdot h $$
+                
+                <p>Площадь боковой поверхности (для прямой призмы):</p>
+                $$ S_{бок} = P \cdot h $$
+                
+                <p>Площадь полной поверхности:</p>
+                $$ S_{полн} = S_{бок} + 2S_{осн} $$
+                
+                <p>Диагональ призмы:</p>
+                $$ d = \sqrt{a^2 + b^2 + h^2} $$
+            </div>
+
+            <h3>Прямая и наклонная призма</h3>
+            <div class="theorem-box">
+                <strong>Прямая призма</strong>
+                <p>Боковые рёбра перпендикулярны основаниям. Боковые грани — прямоугольники. Высота равна боковому ребру.</p>
+                $$ h = l $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Наклонная призма</strong>
+                <p>Боковые рёбра наклонены к основаниям. Боковые грани — параллелограммы. Высота меньше бокового ребра.</p>
+                $$ h < l $$
+            </div>
+
+            <h3>Правильная призма</h3>
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Прямая призма, основания которой — правильные многоугольники.</p>
+                <ul class="props">
+                    <li>Все боковые грани равны</li>
+                    <li>Боковые рёбра равны высоте</li>
+                    <li>Вокруг призмы можно описать сферу</li>
+                </ul>
+            </div>
+
+            <h3>Параллелепипед</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Прямоугольный параллелепипед</strong>
+                    <div>Все грани — прямоугольники</div>
+                </div>
+                <div class="property-item">
+                    <strong>Куб</strong>
+                    <div>Все грани — квадраты (\(a = b = c\))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Объём параллелепипеда</strong>
+                    <div>\( V = abc \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагональ параллелепипеда</strong>
+                    <div>\( d = \sqrt{a^2 + b^2 + c^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь поверхности</strong>
+                    <div>\( S_{полн} = 2(ab + bc + ac) \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь поверхности куба</strong>
+                    <div>\( S = 6a^2 \)</div>
+                </div>
+            </div>
+
+            <h3>Сечения призмы</h3>
+            <div class="theorem-box">
+                <strong>Параллельное сечение</strong>
+                <p>Сечение призмы плоскостью, параллельной основанию, равно основанию.</p>
+                $$ S_{сеч} = S_{осн} $$
+            </div>
+
+            <div class="info-box">
+                <strong>Диагональное сечение</strong>
+                <p>Сечение, проходящее через два боковых ребра, не принадлежащих одной грани. Является параллелограммом.</p>
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Высота через объём</strong>
+                    <div>\( h = \frac{V}{S_{осн}} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь основания через объём</strong>
+                    <div>\( S_{осн} = \frac{V}{h} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр через площадь</strong>
+                    <div>\( P = \frac{S_{бок}}{h} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Боковое ребро</strong>
+                    <div>\( l \geq h \) (равно для прямой призмы)</div>
+                </div>
+            </div>
+
+            <h3>Применение</h3>
+            <div class="info-box">
+                <strong>Где встречается призма</strong>
+                <ul class="props">
+                    <li>Архитектурные элементы (здания, конструкции)</li>
+                    <li>Оптические приборы (призмы в биноклях)</li>
+                    <li>Кристаллы в природе</li>
+                    <li>Упаковка и контейнеры</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

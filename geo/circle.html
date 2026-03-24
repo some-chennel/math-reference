@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства окружности и круга">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Окружность | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Окружность и круг</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Окружность — геометрическая фигура, состоящая из всех точек плоскости, равноудалённых от данной точки (центра). Круг — часть плоскости, ограниченная окружностью.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус</strong>
+                    <div>\(R, r\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диаметр</strong>
+                    <div>\(d = 2R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Длина окружности</strong>
+                    <div>\(C, L\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь круга</strong>
+                    <div>\(S\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Центральный угол</strong>
+                    <div>\(\alpha\) (в градусах или радианах)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Длина дуги</strong>
+                    <div>\(l\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Длина окружности:</p>
+                $$ C = 2\pi R = \pi d $$
+                
+                <p>Площадь круга:</p>
+                $$ S = \pi R^2 = \frac{\pi d^2}{4} $$
+                
+                <p>Длина дуги (угол в градусах):</p>
+                $$ l = \frac{\pi R \alpha}{180^\circ} $$
+                
+                <p>Длина дуги (угол в радианах):</p>
+                $$ l = R \alpha $$
+            </div>
+
+            <h3>Площадь сектора и сегмента</h3>
+            <div class="theorem-box">
+                <strong>Площадь кругового сектора</strong>
+                <p>Сектор — часть круга, ограниченная двумя радиусами и дугой. Площадь сектора пропорциональна центральному углу.</p>
+                $$ S_{сект} = \frac{\pi R^2 \alpha}{360^\circ} = \frac{1}{2} R l $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Площадь кругового сегмента</strong>
+                <p>Сегмент — часть круга, ограниченная дугой и хордой. Равен разности площади сектора и площади треугольника.</p>
+                $$ S_{сегм} = S_{сект} - S_{\triangle} = \frac{\pi R^2 \alpha}{360^\circ} - \frac{1}{2} R^2 \sin \alpha $$
+            </div>
+
+            <h3>Свойства окружности</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Касательная</strong>
+                    <div>Перпендикулярна радиусу в точке касания</div>
+                </div>
+                <div class="property-item">
+                    <strong>Вписанный угол</strong>
+                    <div>Равен половине центрального угла, опирающегося на ту же дугу</div>
+                </div>
+                <div class="property-item">
+                    <strong>Вписанный угол на диаметре</strong>
+                    <div>Всегда прямой (\(90^\circ\))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Хорды</strong>
+                    <div>Равные хорды стягивают равные дуги</div>
+                </div>
+            </div>
+
+            <h3>Уравнение окружности</h3>
+            <div class="formula-block">
+                <p>Окружность с центром в точке \((x_0, y_0)\) и радиусом \(R\):</p>
+                $$ (x - x_0)^2 + (y - y_0)^2 = R^2 $$
+                
+                <p>Окружность с центром в начале координат:</p>
+                $$ x^2 + y^2 = R^2 $$
+            </div>
+
+            <h3>Вписанные и описанные фигуры</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус вписанной окружности</strong>
+                    <div>\( r = \frac{S}{p} \) (для любого многоугольника)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус описанной окружности</strong>
+                    <div>\( R = \frac{abc}{4S} \) (для треугольника)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Квадрат в окружности</strong>
+                    <div>\( R = \frac{a\sqrt{2}}{2} \), \( r = \frac{a}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Правильный треугольник</strong>
+                    <div>\( R = \frac{a\sqrt{3}}{3} \), \( r = \frac{a\sqrt{3}}{6} \)</div>
+                </div>
+            </div>
+
+            <h3>Взаимное расположение прямой и окружности</h3>
+            <div class="info-box">
+                <strong>Возможные случаи</strong>
+                <ul class="props">
+                    <li>Расстояние \(d > R\) — прямая не пересекает окружность</li>
+                    <li>Расстояние \(d = R\) — прямая касается окружности</li>
+                    <li>Расстояние \(d < R\) — прямая пересекает окружность в двух точках</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

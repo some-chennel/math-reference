@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства сферы и шара">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Сфера и Шар | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Сфера и Шар</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Сфера — поверхность, состоящая из всех точек пространства, равноудалённых от данной точки (центра). Шар — геометрическое тело, ограниченное сферой, включающее все точки пространства на расстоянии не более радиуса от центра.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус</strong>
+                    <div>\(R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диаметр</strong>
+                    <div>\(d = 2R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь поверхности сферы</strong>
+                    <div>\(S\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Объём шара</strong>
+                    <div>\(V\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус сечения</strong>
+                    <div>\(r\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Расстояние от центра до сечения</strong>
+                    <div>\(d\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Площадь поверхности сферы:</p>
+                $$ S = 4\pi R^2 = \pi d^2 $$
+                
+                <p>Объём шара:</p>
+                $$ V = \frac{4}{3} \pi R^3 = \frac{\pi d^3}{6} $$
+                
+                <p>Длина окружности большого круга:</p>
+                $$ C = 2\pi R = \pi d $$
+                
+                <p>Площадь большого круга:</p>
+                $$ S_{круга} = \pi R^2 $$
+            </div>
+
+            <h3>Сечения шара</h3>
+            <div class="theorem-box">
+                <strong>Свойство сечения</strong>
+                <p>Любое сечение шара плоскостью есть круг. Если плоскость проходит через центр шара, сечение называется большим кругом.</p>
+                $$ r = \sqrt{R^2 - d^2} $$
+                <p>где \(r\) — радиус сечения, \(d\) — расстояние от центра шара до плоскости сечения.</p>
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Большой круг</strong>
+                    <div>Сечение через центр (\(d = 0\), \(r = R\))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Малый круг</strong>
+                    <div>Сечение не через центр (\(d > 0\), \(r < R\))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Касательная плоскость</strong>
+                    <div>Имеет одну общую точку с сферой (\(d = R\))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Секущая плоскость</strong>
+                    <div>Пересекает сферу по окружности (\(d < R\))</div>
+                </div>
+            </div>
+
+            <h3>Шаровой сегмент</h3>
+            <div class="theorem-box">
+                <strong>Определение</strong>
+                <p>Часть шара, отсекаемая от него плоскостью.</p>
+            </div>
+
+            <div class="formula-block">
+                <p>Площадь поверхности сегмента:</p>
+                $$ S_{сегм} = 2\pi R h $$
+                
+                <p>Объём сегмента:</p>
+                $$ V_{сегм} = \frac{\pi h^2}{3}(3R - h) $$
+                
+                <p>где \(h\) — высота сегмента.</p>
+            </div>
+
+            <h3>Шаровой сектор</h3>
+            <div class="theorem-box">
+                <strong>Определение</strong>
+                <p>Тело, образованное всеми лучами, соединяющими центр шара с точками поверхности шарового сегмента.</p>
+            </div>
+
+            <div class="formula-block">
+                <p>Площадь поверхности сектора:</p>
+                $$ S_{сект} = \pi R(2h + r) $$
+                
+                <p>Объём сектора:</p>
+                $$ V_{сект} = \frac{2}{3} \pi R^2 h $$
+            </div>
+
+            <h3>Шаровой слой</h3>
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Часть шара, заключённая между двумя параллельными секущими плоскостями.</p>
+                <ul class="props">
+                    <li>Площадь поверхности: \( S = 2\pi R h \)</li>
+                    <li>Объём: \( V = \frac{\pi h}{6}(3r_1^2 + 3r_2^2 + h^2) \)</li>
+                </ul>
+            </div>
+
+            <h3>Вписанные и описанные фигуры</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Куб, вписанный в шар</strong>
+                    <div>\( d_{куба} = 2R = a\sqrt{3} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Куб, описанный около шара</strong>
+                    <div>\( a = 2R \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Цилиндр, описанный около шара</strong>
+                    <div>\( h = 2R \), \( R_{цил} = R \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Конус, вписанный в шар</strong>
+                    <div>Вершина и основание на сфере</div>
+                </div>
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус через объём</strong>
+                    <div>\( R = \sqrt[3]{\frac{3V}{4\pi}} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус через площадь</strong>
+                    <div>\( R = \sqrt{\frac{S}{4\pi}} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диаметр через объём</strong>
+                    <div>\( d = \sqrt[3]{\frac{6V}{\pi}} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Отношение объёма к площади</strong>
+                    <div>\( \frac{V}{S} = \frac{R}{3} \)</div>
+                </div>
+            </div>
+
+            <h3>Применение</h3>
+            <div class="info-box">
+                <strong>Где встречается шар</strong>
+                <ul class="props">
+                    <li>Природные объекты (планеты, звёзды, капли)</li>
+                    <li>Технические детали (подшипники, мячи)</li>
+                    <li>Архитектурные элементы (купола, сферы)</li>
+                    <li>Научные модели (атомы, молекулы)</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

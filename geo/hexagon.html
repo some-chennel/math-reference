@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства правильного шестиугольника">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Правильный шестиугольник | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Правильный шестиугольник</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Правильный шестиугольник — многоугольник с шестью равными сторонами и шестью равными углами. Каждый внутренний угол равен 120°.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Сторона</strong>
+                    <div>\(a\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр</strong>
+                    <div>\(P\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь</strong>
+                    <div>\(S\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус описанной окружности</strong>
+                    <div>\(R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанной окружности</strong>
+                    <div>\(r\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Большая диагональ</strong>
+                    <div>\(d_1\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Малая диагональ</strong>
+                    <div>\(d_2\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Периметр:</p>
+                $$ P = 6a $$
+                
+                <p>Площадь через сторону:</p>
+                $$ S = \frac{3a^2 \sqrt{3}}{2} $$
+                
+                <p>Площадь через радиус описанной окружности:</p>
+                $$ S = \frac{3R^2 \sqrt{3}}{2} $$
+                
+                <p>Площадь через радиус вписанной окружности:</p>
+                $$ S = 2r^2 \sqrt{3} $$
+            </div>
+
+            <h3>Окружности</h3>
+            <div class="theorem-box">
+                <strong>Радиус описанной окружности</strong>
+                <p>Радиус описанной окружности равен стороне правильного шестиугольника.</p>
+                $$ R = a $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Радиус вписанной окружности</strong>
+                <p>Радиус вписанной окружности равен апофеме шестиугольника.</p>
+                $$ r = \frac{a \sqrt{3}}{2} = \frac{R \sqrt{3}}{2} $$
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Соотношение радиусов</strong>
+                    <div>\( r = \frac{R \sqrt{3}}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь описанной окружности</strong>
+                    <div>\( S_{окр} = \pi R^2 = \pi a^2 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь вписанной окружности</strong>
+                    <div>\( S_{окр} = \pi r^2 = \frac{3\pi a^2}{4} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Длина описанной окружности</strong>
+                    <div>\( C = 2\pi R = 2\pi a \)</div>
+                </div>
+            </div>
+
+            <h3>Диагонали</h3>
+            <div class="formula-block">
+                <p>Большая диагональ (через центр):</p>
+                $$ d_1 = 2a = 2R $$
+                
+                <p>Малая диагональ:</p>
+                $$ d_2 = a \sqrt{3} = R \sqrt{3} $$
+                
+                <p>Количество диагоналей:</p>
+                $$ N = \frac{n(n-3)}{2} = \frac{6 \cdot 3}{2} = 9 $$
+            </div>
+
+            <h3>Свойства правильного шестиугольника</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Все стороны</strong>
+                    <div>Равны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Все углы</strong>
+                    <div>Равны \(120^\circ\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма углов</strong>
+                    <div>\( 720^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Оси симметрии</strong>
+                    <div>6 осей (3 через вершины, 3 через середины сторон)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Центр симметрии</strong>
+                    <div>Центр описанной и вписанной окружности</div>
+                </div>
+                <div class="property-item">
+                    <strong>Составные треугольники</strong>
+                    <div>Можно разделить на 6 равносторонних треугольников</div>
+                </div>
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="formula-block">
+                <p>Сторона через радиус вписанной окружности:</p>
+                $$ a = \frac{2r}{\sqrt{3}} $$
+                
+                <p>Сторона через площадь:</p>
+                $$ a = \sqrt{\frac{2S}{3\sqrt{3}}} $$
+                
+                <p>Радиус вписанной через радиус описанной:</p>
+                $$ r = \frac{R \sqrt{3}}{2} $$
+                
+                <p>Радиус описанной через радиус вписанной:</p>
+                $$ R = \frac{2r}{\sqrt{3}} $$
+            </div>
+
+            <h3>Дополнительные формулы</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Апофема</strong>
+                    <div>\( h = r = \frac{a \sqrt{3}}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь через периметр</strong>
+                    <div>\( S = \frac{P \cdot r}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Отношение площадей окружностей</strong>
+                    <div>\( \frac{S_{опис}}{S_{впис}} = \frac{4}{3} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сторона через большую диагональ</strong>
+                    <div>\( a = \frac{d_1}{2} \)</div>
+                </div>
+            </div>
+
+            <h3>Применение</h3>
+            <div class="info-box">
+                <strong>Где встречается правильный шестиугольник</strong>
+                <ul class="props">
+                    <li>Пчелиные соты (природная эффективность)</li>
+                    <li>Гайки и болты (инструменты)</li>
+                    <li>Снежинки (кристаллическая структура)</li>
+                    <li>Плитка и мощение (без зазоров)</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

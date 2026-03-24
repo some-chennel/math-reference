@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Таблица первообразных и неопределённых интегралов">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Интегралы | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Неопределённый интеграл</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Первообразной функции \(f(x)\) называется такая функция \(F(x)\), производная которой равна \(f(x)\). Неопределённый интеграл — это совокупность всех первообразных функции.</p>
+                $$ \int f(x)dx = F(x) + C, \quad \text{где } F'(x) = f(x) $$
+                <p>\(C\) — произвольная постоянная.</p>
+            </div>
+
+            <div class="geometric-meaning">
+                <strong>Геометрический смысл</strong>
+                <p>Определённый интеграл равен площади криволинейной трапеции, ограниченной графиком функции, осью OX и вертикальными прямыми \(x = a\) и \(x = b\).</p>
+                $$ \int_{a}^{b} f(x)dx = S_{крив.трап.} $$
+            </div>
+
+            <h3>Свойства интегралов</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Интеграл от суммы</strong>
+                    <div>\( \int (f + g)dx = \int f dx + \int g dx \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Постоянный множитель</strong>
+                    <div>\( \int C \cdot f dx = C \cdot \int f dx \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Интеграл от константы</strong>
+                    <div>\( \int C dx = Cx + K \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Производная интеграла</strong>
+                    <div>\( \frac{d}{dx}\int f(x)dx = f(x) \)</div>
+                </div>
+            </div>
+
+            <h3>Таблица основных интегралов</h3>
+            <div class="table-wrapper">
+                <table class="derivatives-table">
+                    <thead>
+                        <tr>
+                            <th>Функция</th>
+                            <th>Интеграл</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>\( 0 \)</td>
+                            <td>\( C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( 1 \)</td>
+                            <td>\( x + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( x^n \)</td>
+                            <td>\( \frac{x^{n+1}}{n+1} + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \frac{1}{x} \)</td>
+                            <td>\( \ln|x| + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \frac{1}{\sqrt{x}} \)</td>
+                            <td>\( 2\sqrt{x} + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \sin x \)</td>
+                            <td>\( -\cos x + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \cos x \)</td>
+                            <td>\( \sin x + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \frac{1}{\cos^2 x} \)</td>
+                            <td>\( \operatorname{tg} x + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \frac{1}{\sin^2 x} \)</td>
+                            <td>\( -\operatorname{ctg} x + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( e^x \)</td>
+                            <td>\( e^x + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( a^x \)</td>
+                            <td>\( \frac{a^x}{\ln a} + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \frac{1}{\sqrt{1-x^2}} \)</td>
+                            <td>\( \arcsin x + C \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \frac{1}{1+x^2} \)</td>
+                            <td>\( \operatorname{arctg} x + C \)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Методы интегрирования</h3>
+            <div class="theorem-box">
+                <strong>Интегрирование по частям</strong>
+                <p>Применяется для интегралов от произведения функций. Формула выводится из правила дифференцирования произведения.</p>
+                $$ \int u dv = uv - \int v du $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Замена переменной</strong>
+                <p>Если \(x = g(t)\), то \(dx = g'(t)dt\). Позволяет свести сложный интеграл к табличному.</p>
+                $$ \int f(x)dx = \int f(g(t)) \cdot g'(t) dt $$
+            </div>
+
+            <h3>Определённый интеграл</h3>
+            <div class="formula-block">
+                <p>Формула Ньютона-Лейбница:</p>
+                $$ \int_{a}^{b} f(x)dx = F(b) - F(a) $$
+                
+                <p>Свойства определённого интеграла:</p>
+                $$ \int_{a}^{b} f(x)dx = -\int_{b}^{a} f(x)dx $$
+                $$ \int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx $$
+            </div>
+
+            <h3>Важные замечания</h3>
+            <div class="info-box">
+                <strong>Область применения</strong>
+                <ul class="props">
+                    <li>Вычисление площадей фигур</li>
+                    <li>Нахождение объёмов тел вращения</li>
+                    <li>Вычисление пути по скорости</li>
+                    <li>Решение дифференциальных уравнений</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

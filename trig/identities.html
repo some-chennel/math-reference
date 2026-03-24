@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Основные тригонометрические тождества и формулы">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Тригонометрические тождества | Математический справочник</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Тригонометрические тождества</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Тригонометрические тождества — это равенства, связывающие тригонометрические функции одного или
+                    нескольких углов, которые верны при всех допустимых значениях аргументов.</p>
+            </div>
+
+            <h3>Основные тождества</h3>
+            <div class="formula-block">
+                <p>Основное тригонометрическое тождество:</p>
+                $$ \sin^2 \alpha + \cos^2 \alpha = 1 $$
+
+                <p>Тождество для тангенса и котангенса:</p>
+                $$ \operatorname{tg} \alpha \cdot \operatorname{ctg} \alpha = 1 $$
+
+                <p>Связь тангенса с синусом и косинусом:</p>
+                $$ \operatorname{tg} \alpha = \frac{\sin \alpha}{\cos \alpha} $$
+
+                <p>Связь котангенса с синусом и косинусом:</p>
+                $$ \operatorname{ctg} \alpha = \frac{\cos \alpha}{\sin \alpha} $$
+            </div>
+
+            <h3>Тождества с квадратами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Для тангенса</strong>
+                    <div>\( 1 + \operatorname{tg}^2 \alpha = \frac{1}{\cos^2 \alpha} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Для котангенса</strong>
+                    <div>\( 1 + \operatorname{ctg}^2 \alpha = \frac{1}{\sin^2 \alpha} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Выражение косинуса</strong>
+                    <div>\( \cos^2 \alpha = \frac{1}{1 + \operatorname{tg}^2 \alpha} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Выражение синуса</strong>
+                    <div>\( \sin^2 \alpha = \frac{1}{1 + \operatorname{ctg}^2 \alpha} \)</div>
+                </div>
+            </div>
+
+            <h3>Формулы сложения</h3>
+            <div class="theorem-box">
+                <strong>Синус суммы и разности</strong>
+                <p>Синус суммы двух углов равен произведению синуса первого угла на косинус второго плюс произведение
+                    косинуса первого угла на синус второго.</p>
+                $$ \sin(\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta $$
+                $$ \sin(\alpha - \beta) = \sin \alpha \cos \beta - \cos \alpha \sin \beta $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Косинус суммы и разности</strong>
+                <p>Косинус суммы двух углов равен произведению косинусов этих углов минус произведение их синусов.</p>
+                $$ \cos(\alpha + \beta) = \cos \alpha \cos \beta - \sin \alpha \sin \beta $$
+                $$ \cos(\alpha - \beta) = \cos \alpha \cos \beta + \sin \alpha \sin \beta $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Тангенс суммы и разности</strong>
+                <p>Тангенс суммы двух углов равен дроби, в числителе которой сумма тангенсов, а в знаменателе — единица
+                    минус произведение тангенсов.</p>
+                $$ \operatorname{tg}(\alpha + \beta) = \frac{\operatorname{tg} \alpha + \operatorname{tg} \beta}{1 -
+                \operatorname{tg} \alpha \operatorname{tg} \beta} $$
+                $$ \operatorname{tg}(\alpha - \beta) = \frac{\operatorname{tg} \alpha - \operatorname{tg} \beta}{1 +
+                \operatorname{tg} \alpha \operatorname{tg} \beta} $$
+            </div>
+
+            <h3>Формулы двойного аргумента</h3>
+            <div class="formula-block">
+                <p>Синус двойного угла:</p>
+                $$ \sin 2\alpha = 2 \sin \alpha \cos \alpha $$
+
+                <p>Косинус двойного угла (три формы):</p>
+                $$ \cos 2\alpha = \cos^2 \alpha - \sin^2 \alpha $$
+                $$ \cos 2\alpha = 2\cos^2 \alpha - 1 $$
+                $$ \cos 2\alpha = 1 - 2\sin^2 \alpha $$
+
+                <p>Тангенс двойного угла:</p>
+                $$ \operatorname{tg} 2\alpha = \frac{2 \operatorname{tg} \alpha}{1 - \operatorname{tg}^2 \alpha} $$
+            </div>
+
+            <h3>Формулы понижения степени</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Для синуса в квадрате</strong>
+                    <div>\( \sin^2 \alpha = \frac{1 - \cos 2\alpha}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Для косинуса в квадрате</strong>
+                    <div>\( \cos^2 \alpha = \frac{1 + \cos 2\alpha}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Для синуса в 4 степени</strong>
+                    <div>\( \sin^4 \alpha = \frac{3 - 4\cos 2\alpha + \cos 4\alpha}{8} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Для косинуса в 4 степени</strong>
+                    <div>\( \cos^4 \alpha = \frac{3 + 4\cos 2\alpha + \cos 4\alpha}{8} \)</div>
+                </div>
+            </div>
+
+            <h3>Формулы суммы и разности</h3>
+            <div class="formula-block">
+                <p>Сумма синусов:</p>
+                $$ \sin \alpha + \sin \beta = 2 \sin \frac{\alpha + \beta}{2} \cos \frac{\alpha - \beta}{2} $$
+
+                <p>Разность синусов:</p>
+                $$ \sin \alpha - \sin \beta = 2 \sin \frac{\alpha - \beta}{2} \cos \frac{\alpha + \beta}{2} $$
+
+                <p>Сумма косинусов:</p>
+                $$ \cos \alpha + \cos \beta = 2 \cos \frac{\alpha + \beta}{2} \cos \frac{\alpha - \beta}{2} $$
+
+                <p>Разность косинусов:</p>
+                $$ \cos \alpha - \cos \beta = -2 \sin \frac{\alpha + \beta}{2} \sin \frac{\alpha - \beta}{2} $$
+            </div>
+
+            <h3>Формулы произведения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Произведение синусов</strong>
+                    <div>\( \sin \alpha \sin \beta = \frac{1}{2}[\cos(\alpha - \beta) - \cos(\alpha + \beta)] \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Произведение косинусов</strong>
+                    <div>\( \cos \alpha \cos \beta = \frac{1}{2}[\cos(\alpha - \beta) + \cos(\alpha + \beta)] \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Произведение синуса и косинуса</strong>
+                    <div>\( \sin \alpha \cos \beta = \frac{1}{2}[\sin(\alpha - \beta) + \sin(\alpha + \beta)] \)</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Свойства и формулы логарифмов">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Логарифмы | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Логарифмы</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Логарифмом числа \(b\) по основанию \(a\) называется показатель степени, в которую нужно возвести основание \(a\), чтобы получить число \(b\).</p>
+                $$ \log_a b = x \quad \Leftrightarrow \quad a^x = b $$
+                <p>где \(a > 0\), \(a \neq 1\), \(b > 0\).</p>
+            </div>
+
+            <div class="info-box">
+                <strong>Основное логарифмическое тождество</strong>
+                <p>Степень с основанием \(a\), показатель которой равен логарифму числа \(b\) по основанию \(a\), равна самому числу \(b\).</p>
+                $$ a^{\log_a b} = b $$
+            </div>
+
+            <h3>Основные свойства</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Логарифм единицы</strong>
+                    <div>\( \log_a 1 = 0 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Логарифм основания</strong>
+                    <div>\( \log_a a = 1 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Логарифм степени основания</strong>
+                    <div>\( \log_a a^n = n \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Логарифм произведения</strong>
+                    <div>\( \log_a (bc) = \log_a b + \log_a c \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Логарифм частного</strong>
+                    <div>\( \log_a \frac{b}{c} = \log_a b - \log_a c \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Логарифм степени</strong>
+                    <div>\( \log_a b^n = n \cdot \log_a b \)</div>
+                </div>
+            </div>
+
+            <h3>Формулы перехода</h3>
+            <div class="formula-block">
+                <p>Переход к другому основанию:</p>
+                $$ \log_a b = \frac{\log_c b}{\log_c a} $$
+                
+                <p>Следствие (взаимно обратные логарифмы):</p>
+                $$ \log_a b = \frac{1}{\log_b a} $$
+                
+                <p>Формула замены основания в степени:</p>
+                $$ \log_{a^n} b = \frac{1}{n} \log_a b $$
+            </div>
+
+            <h3>Десятичный и натуральный логарифмы</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Десятичный логарифм</strong>
+                    <div>\( \lg b = \log_{10} b \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Натуральный логарифм</strong>
+                    <div>\( \ln b = \log_e b \), где \(e \approx 2.718\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Связь между ними</strong>
+                    <div>\( \ln b = \lg b \cdot \ln 10 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Основное тождество</strong>
+                    <div>\( e^{\ln b} = b \), \( 10^{\lg b} = b \)</div>
+                </div>
+            </div>
+
+            <h3>Логарифмические уравнения</h3>
+            <div class="theorem-box">
+                <strong>Простейшее логарифмическое уравнение</strong>
+                <p>Уравнение вида \(\log_a x = b\) имеет единственное решение при \(a > 0\), \(a \neq 1\):</p>
+                $$ x = a^b $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Уравнение с равными основаниями</strong>
+                <p>Если основания логарифмов равны, то равны и подлогарифмические выражения:</p>
+                $$ \log_a f(x) = \log_a g(x) \quad \Leftrightarrow \quad f(x) = g(x) $$
+                <p>при условии \(f(x) > 0\) и \(g(x) > 0\).</p>
+            </div>
+
+            <h3>Важные тождества</h3>
+            <div class="formula-block">
+                <p>Логарифм произведения степени:</p>
+                $$ \log_a (b^p \cdot c^q) = p \log_a b + q \log_a c $$
+                
+                <p>Логарифм корня:</p>
+                $$ \log_a \sqrt[n]{b} = \frac{1}{n} \log_a b $$
+                
+                <p>Степень с логарифмическим показателем:</p>
+                $$ a^{p \log_a b} = b^p $$
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

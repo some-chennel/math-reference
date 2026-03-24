@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства трапеции">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Трапеция | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Трапеция</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Трапеция — четырёхугольник, у которого две стороны параллельны (основания), а две другие стороны не параллельны (боковые стороны).</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Основания</strong>
+                    <div>\(a, b\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Боковые стороны</strong>
+                    <div>\(c, d\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Средняя линия</strong>
+                    <div>\(m\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр</strong>
+                    <div>\(P\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь</strong>
+                    <div>\(S\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Периметр (сумма всех сторон):</p>
+                $$ P = a + b + c + d $$
+                
+                <p>Площадь через основания и высоту:</p>
+                $$ S = \frac{a + b}{2} \cdot h $$
+                
+                <p>Площадь через среднюю линию:</p>
+                $$ S = m \cdot h $$
+                
+                <p>Средняя линия трапеции:</p>
+                $$ m = \frac{a + b}{2} $$
+            </div>
+
+            <h3>Свойства трапеции</h3>
+            <div class="theorem-box">
+                <strong>Средняя линия</strong>
+                <p>Средняя линия трапеции параллельна основаниям и равна их полусумме.</p>
+                $$ m \parallel a, \quad m \parallel b $$
+                $$ m = \frac{a + b}{2} $$
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Сумма углов</strong>
+                    <div>\( 360^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Углы при боковой стороне</strong>
+                    <div>Сумма равна \( 180^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали</strong>
+                    <div>Делятся точкой пересечения в отношении оснований</div>
+                </div>
+                <div class="property-item">
+                    <strong>Отношение отрезков диагоналей</strong>
+                    <div>\( \frac{AO}{OC} = \frac{BO}{OD} = \frac{a}{b} \)</div>
+                </div>
+            </div>
+
+            <h3>Равнобедренная трапеция</h3>
+            <div class="theorem-box">
+                <strong>Определение</strong>
+                <p>Равнобедренная трапеция — трапеция, у которой боковые стороны равны.</p>
+                $$ c = d $$
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Углы при основаниях</strong>
+                    <div>Равны (\( \angle A = \angle B \), \( \angle C = \angle D \))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали</strong>
+                    <div>Равны (\( d_1 = d_2 \))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Ось симметрии</strong>
+                    <div>Проходит через середины оснований</div>
+                </div>
+                <div class="property-item">
+                    <strong>Вписанная окружность</strong>
+                    <div>Существует, если \( a + b = c + d \)</div>
+                </div>
+            </div>
+
+            <h3>Прямоугольная трапеция</h3>
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Прямоугольная трапеция — трапеция, у которой одна из боковых сторон перпендикулярна основаниям.</p>
+                <ul class="props">
+                    <li>Один угол равен \( 90^\circ \)</li>
+                    <li>Высота равна перпендикулярной боковой стороне</li>
+                    <li>Два угла при перпендикулярной стороне равны \( 90^\circ \)</li>
+                </ul>
+            </div>
+
+            <h3>Диагонали трапеции</h3>
+            <div class="formula-block">
+                <p>Длина диагонали через стороны (для равнобедренной):</p>
+                $$ d_1 = d_2 = \sqrt{a \cdot b + c^2} $$
+                
+                <p>Отношение отрезков диагоналей:</p>
+                $$ \frac{AO}{OC} = \frac{BO}{OD} = \frac{a}{b} $$
+                
+                <p>Отрезок, соединяющий середины диагоналей:</p>
+                $$ KM = \frac{|a - b|}{2} $$
+            </div>
+
+            <h3>Вписанная и описанная окружности</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Вписанная окружность</strong>
+                    <div>Существует, если сумма оснований равна сумме боковых сторон: \( a + b = c + d \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанной</strong>
+                    <div>\( r = \frac{h}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Описанная окружность</strong>
+                    <div>Существует только для равнобедренной трапеции</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь через радиус</strong>
+                    <div>\( S = r \cdot (a + b) \) (при вписанной окружности)</div>
+                </div>
+            </div>
+
+            <h3>Признаки трапеции</h3>
+            <div class="info-box">
+                <strong>Четырёхугольник является трапецией, если:</strong>
+                <ul class="props">
+                    <li>Две стороны параллельны, две другие — нет</li>
+                    <li>Сумма углов при боковой стороне равна \( 180^\circ \)</li>
+                    <li>Диагонали делятся точкой пересечения в отношении оснований</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства прямоугольного треугольника">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Прямоугольный треугольник | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Прямоугольный треугольник</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Прямоугольный треугольник — треугольник, у которого один из углов равен 90°. Сторона, противолежащая прямому углу, называется гипотенузой, две другие стороны — катетами.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Катеты</strong>
+                    <div>\(a, b\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Гипотенуза</strong>
+                    <div>\(c\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота к гипотенузе</strong>
+                    <div>\(h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Проекции катетов</strong>
+                    <div>\(a_c, b_c\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус описанной окружности</strong>
+                    <div>\(R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанной окружности</strong>
+                    <div>\(r\)</div>
+                </div>
+            </div>
+
+            <h3>Площадь</h3>
+            <div class="formula-block">
+                <p>Через катеты:</p>
+                $$ S = \frac{1}{2} ab $$
+                
+                <p>Через гипотенузу и высоту:</p>
+                $$ S = \frac{1}{2} c h $$
+                
+                <p>Через катет и проекцию:</p>
+                $$ S = \frac{1}{2} a \sqrt{c^2 - a^2} $$
+            </div>
+
+            <h3>Основные теоремы</h3>
+            
+            <div class="theorem-box">
+                <strong>Теорема Пифагора</strong>
+                <p>В прямоугольном треугольнике квадрат гипотенузы равен сумме квадратов катетов.</p>
+                $$ c^2 = a^2 + b^2 $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Свойство высоты</strong>
+                <p>Высота, проведённая из вершины прямого угла, делит треугольник на два подобных исходному. Квадрат высоты равен произведению проекций катетов на гипотенузу.</p>
+                $$ h^2 = a_c \cdot b_c $$
+                $$ h = \frac{ab}{c} $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Свойство медианы</strong>
+                <p>Медиана, проведённая к гипотенузе, равна её половине и является радиусом описанной окружности.</p>
+                $$ m_c = \frac{c}{2} = R $$
+            </div>
+
+            <h3>Свойства</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Центр описанной окружности</strong>
+                    <div>Лежит на середине гипотенузы</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанной окружности</strong>
+                    <div>\( r = \frac{a + b - c}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Проекции катетов</strong>
+                    <div>\( a^2 = c \cdot a_c \), \( b^2 = c \cdot b_c \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма острых углов</strong>
+                    <div>\( \angle A + \angle B = 90^\circ \)</div>
+                </div>
+            </div>
+
+            <h3>Тригонометрия</h3>
+            <div class="formula-block">
+                <p>Синус острого угла (отношение противолежащего катета к гипотенузе):</p>
+                $$ \sin \alpha = \frac{a}{c} $$
+                
+                <p>Косинус острого угла (отношение прилежащего катета к гипотенузе):</p>
+                $$ \cos \alpha = \frac{b}{c} $$
+                
+                <p>Тангенс острого угла (отношение противолежащего катета к прилежащему):</p>
+                $$ \operatorname{tg} \alpha = \frac{a}{b} $$
+                
+                <p>Котангенс острого угла:</p>
+                $$ \operatorname{ctg} \alpha = \frac{b}{a} $$
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Катет через гипотенузу</strong>
+                    <div>\( a = c \sin \alpha \), \( b = c \cos \alpha \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Катет через другой катет</strong>
+                    <div>\( a = b \operatorname{tg} \alpha \), \( b = a \operatorname{ctg} \alpha \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Гипотенуза через катет</strong>
+                    <div>\( c = \frac{a}{\sin \alpha} \), \( c = \frac{b}{\cos \alpha} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота через катеты</strong>
+                    <div>\( h = \frac{ab}{c} \)</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

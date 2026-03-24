@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Таблица производных и правила дифференцирования">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Производные | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Производные</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение производной</strong>
+                <p>Производной функции \(f(x)\) в точке \(x_0\) называется предел отношения приращения функции к приращению аргумента при стремлении приращения аргумента к нулю.</p>
+                $$ f'(x_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} $$
+            </div>
+
+            <div class="geometric-meaning">
+                <strong>Геометрический смысл</strong>
+                <p>Производная функции в точке равна тангенсу угла наклона касательной к графику функции в этой точке.</p>
+                $$ f'(x_0) = \tan \alpha $$
+                <p>где \(\alpha\) — угол между касательной и положительным направлением оси OX.</p>
+            </div>
+
+            <h3>Правила дифференцирования</h3>
+            <div class="formula-block">
+                <p>Производная суммы или разности функций равна сумме или разности их производных:</p>
+                $$ (u \pm v)' = u' \pm v' $$
+                
+                <p>Постоянный множитель можно выносить за знак производной:</p>
+                $$ (C \cdot u)' = C \cdot u' $$
+                
+                <p>Производная произведения двух функций:</p>
+                $$ (u \cdot v)' = u'v + uv' $$
+                
+                <p>Производная частного двух функций:</p>
+                $$ \left(\frac{u}{v}\right)' = \frac{u'v - uv'}{v^2}, \quad v \neq 0 $$
+                
+                <p>Производная сложной функции (цепное правило):</p>
+                $$ (f(g(x)))' = f'(g(x)) \cdot g'(x) $$
+            </div>
+
+            <h3>Таблица производных</h3>
+            <div class="table-wrapper">
+                <table class="derivatives-table">
+                    <thead>
+                        <tr>
+                            <th>Функция</th>
+                            <th>Производная</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>\( C \) (const)</td>
+                            <td>\( 0 \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( x \)</td>
+                            <td>\( 1 \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( x^n \)</td>
+                            <td>\( n \cdot x^{n-1} \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \sqrt{x} \)</td>
+                            <td>\( \frac{1}{2\sqrt{x}} \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \sin x \)</td>
+                            <td>\( \cos x \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \cos x \)</td>
+                            <td>\( -\sin x \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \operatorname{tg} x \)</td>
+                            <td>\( \frac{1}{\cos^2 x} \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( e^x \)</td>
+                            <td>\( e^x \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( a^x \)</td>
+                            <td>\( a^x \ln a \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \ln x \)</td>
+                            <td>\( \frac{1}{x} \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \log_a x \)</td>
+                            <td>\( \frac{1}{x \ln a} \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \arcsin x \)</td>
+                            <td>\( \frac{1}{\sqrt{1-x^2}} \)</td>
+                        </tr>
+                        <tr>
+                            <td>\( \operatorname{arctg} x \)</td>
+                            <td>\( \frac{1}{1+x^2} \)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Свойства производных</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Линейность</strong>
+                    <div>Производная линейной комбинации функций равна линейной комбинации их производных</div>
+                </div>
+                <div class="property-item">
+                    <strong>Производная константы</strong>
+                    <div>Производная от любого постоянного числа равна нулю</div>
+                </div>
+                <div class="property-item">
+                    <strong>Возрастание функции</strong>
+                    <div>Если \( f'(x) > 0 \) на интервале, функция возрастает</div>
+                </div>
+                <div class="property-item">
+                    <strong>Убывание функции</strong>
+                    <div>Если \( f'(x) < 0 \) на интервале, функция убывает</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

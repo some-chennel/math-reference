@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства прямоугольного параллелепипеда">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Прямоугольный параллелепипед | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Прямоугольный параллелепипед</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Прямоугольный параллелепипед — это призма, основанием которой является прямоугольник, а боковые рёбра перпендикулярны основанию. Все грани прямоугольного параллелепипеда — прямоугольники.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Измерения</strong>
+                    <div>\(a, b, c\) (длина, ширина, высота)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагональ</strong>
+                    <div>\(d\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь боковой поверхности</strong>
+                    <div>\(S_{бок}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь полной поверхности</strong>
+                    <div>\(S_{полн}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Объём</strong>
+                    <div>\(V\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр основания</strong>
+                    <div>\(P\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Объём прямоугольного параллелепипеда:</p>
+                $$ V = a \cdot b \cdot c $$
+                
+                <p>Площадь боковой поверхности:</p>
+                $$ S_{бок} = 2ac + 2bc = 2c(a + b) $$
+                
+                <p>Площадь полной поверхности:</p>
+                $$ S_{полн} = 2ab + 2ac + 2bc = 2(ab + ac + bc) $$
+                
+                <p>Диагональ прямоугольного параллелепипеда:</p>
+                $$ d = \sqrt{a^2 + b^2 + c^2} $$
+            </div>
+
+            <h3>Диагональ параллелепипеда</h3>
+            <div class="theorem-box">
+                <strong>Теорема о диагонали</strong>
+                <p>Квадрат диагонали прямоугольного параллелепипеда равен сумме квадратов трёх его измерений.</p>
+                $$ d^2 = a^2 + b^2 + c^2 $$
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Диагональ через измерения</strong>
+                    <div>\( d = \sqrt{a^2 + b^2 + c^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Измерение через диагональ</strong>
+                    <div>\( a = \sqrt{d^2 - b^2 - c^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагональ основания</strong>
+                    <div>\( d_{осн} = \sqrt{a^2 + b^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагональ боковой грани</strong>
+                    <div>\( d_{гран} = \sqrt{a^2 + c^2} \) или \( \sqrt{b^2 + c^2} \)</div>
+                </div>
+            </div>
+
+            <h3>Свойства прямоугольного параллелепипеда</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Грани</strong>
+                    <div>6 граней, все — прямоугольники</div>
+                </div>
+                <div class="property-item">
+                    <strong>Рёбра</strong>
+                    <div>12 рёбер, по 4 равных рёбра каждого измерения</div>
+                </div>
+                <div class="property-item">
+                    <strong>Вершины</strong>
+                    <div>8 вершин</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали</strong>
+                    <div>4 диагонали, все равны и пересекаются в одной точке</div>
+                </div>
+                <div class="property-item">
+                    <strong>Противоположные грани</strong>
+                    <div>Параллельны и равны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Центр симметрии</strong>
+                    <div>Точка пересечения диагоналей</div>
+                </div>
+            </div>
+
+            <h3>Куб как частный случай</h3>
+            <div class="theorem-box">
+                <strong>Определение куба</strong>
+                <p>Куб — это прямоугольный параллелепипед, у которого все измерения равны (\(a = b = c\)). Все грани куба — равные квадраты.</p>
+            </div>
+
+            <div class="formula-block">
+                <p>Объём куба:</p>
+                $$ V = a^3 $$
+                
+                <p>Площадь поверхности куба:</p>
+                $$ S_{полн} = 6a^2 $$
+                
+                <p>Диагональ куба:</p>
+                $$ d = a\sqrt{3} $$
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Объём через площадь и высоту</strong>
+                    <div>\( V = S_{осн} \cdot c = ab \cdot c \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь основания</strong>
+                    <div>\( S_{осн} = ab \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр основания</strong>
+                    <div>\( P = 2(a + b) \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма длин всех рёбер</strong>
+                    <div>\( L = 4(a + b + c) \)</div>
+                </div>
+            </div>
+
+            <h3>Вписанные и описанные фигуры</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Шар, описанный около параллелепипеда</strong>
+                    <div>Диаметр шара равен диагонали параллелепипеда</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус описанного шара</strong>
+                    <div>\( R = \frac{d}{2} = \frac{\sqrt{a^2 + b^2 + c^2}}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Шар, вписанный в куб</strong>
+                    <div>Диаметр шара равен ребру куба</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанного шара (в куб)</strong>
+                    <div>\( r = \frac{a}{2} \)</div>
+                </div>
+            </div>
+
+            <h3>Применение</h3>
+            <div class="info-box">
+                <strong>Где встречается прямоугольный параллелепипед</strong>
+                <ul class="props">
+                    <li>Строительство (здания, комнаты, блоки)</li>
+                    <li>Упаковка (коробки, контейнеры)</li>
+                    <li>Техника (компьютеры, холодильники)</li>
+                    <li>Мебель (шкафы, столы, ящики)</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

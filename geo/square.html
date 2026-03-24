@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства квадрата">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Квадрат | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Квадрат</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Квадрат — это прямоугольник, у которого все стороны равны. Квадрат является правильным четырёхугольником, у которого все углы прямые и все стороны равны.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Сторона</strong>
+                    <div>\(a\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагональ</strong>
+                    <div>\(d\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр</strong>
+                    <div>\(P\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь</strong>
+                    <div>\(S\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус описанной окружности</strong>
+                    <div>\(R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанной окружности</strong>
+                    <div>\(r\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Периметр (сумма всех сторон):</p>
+                $$ P = 4a $$
+                
+                <p>Площадь через сторону:</p>
+                $$ S = a^2 $$
+                
+                <p>Площадь через диагональ:</p>
+                $$ S = \frac{d^2}{2} $$
+                
+                <p>Диагональ через сторону:</p>
+                $$ d = a\sqrt{2} $$
+                
+                <p>Сторона через диагональ:</p>
+                $$ a = \frac{d}{\sqrt{2}} $$
+            </div>
+
+            <h3>Окружности</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус описанной окружности</strong>
+                    <div>\( R = \frac{d}{2} = \frac{a\sqrt{2}}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанной окружности</strong>
+                    <div>\( r = \frac{a}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь описанной окружности</strong>
+                    <div>\( S_{окр} = \pi R^2 = \frac{\pi a^2}{2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь вписанной окружности</strong>
+                    <div>\( S_{окр} = \pi r^2 = \frac{\pi a^2}{4} \)</div>
+                </div>
+            </div>
+
+            <h3>Свойства квадрата</h3>
+            <div class="theorem-box">
+                <strong>Диагонали квадрата</strong>
+                <p>Диагонали квадрата равны, взаимно перпендикулярны, точкой пересечения делятся пополам и являются биссектрисами углов квадрата.</p>
+                $$ d_1 = d_2 = d $$
+                $$ d_1 \perp d_2 $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Углы квадрата</strong>
+                <p>Все углы квадрата прямые и равны 90°. Диагональ делит угол квадрата пополам, образуя углы по 45°.</p>
+                $$ \angle A = \angle B = \angle C = \angle D = 90^\circ $$
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Противоположные стороны</strong>
+                    <div>Параллельны и равны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма углов</strong>
+                    <div>\( 360^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Оси симметрии</strong>
+                    <div>4 оси (2 через середины сторон, 2 через диагонали)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Центр симметрии</strong>
+                    <div>Точка пересечения диагоналей</div>
+                </div>
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="formula-block">
+                <p>Сторона через периметр:</p>
+                $$ a = \frac{P}{4} $$
+                
+                <p>Сторона через площадь:</p>
+                $$ a = \sqrt{S} $$
+                
+                <p>Диагональ через площадь:</p>
+                $$ d = \sqrt{2S} $$
+                
+                <p>Периметр через площадь:</p>
+                $$ P = 4\sqrt{S} $$
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

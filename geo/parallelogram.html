@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства параллелограмма">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Параллелограмм | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Параллелограмм</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Параллелограмм — четырёхугольник, у которого противоположные стороны попарно параллельны. Параллелограмм является частным случаем трапеции.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Стороны</strong>
+                    <div>\(a, b\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h_a, h_b\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали</strong>
+                    <div>\(d_1, d_2\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр</strong>
+                    <div>\(P\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь</strong>
+                    <div>\(S\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Угол между сторонами</strong>
+                    <div>\(\alpha, \beta\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Периметр (сумма всех сторон):</p>
+                $$ P = 2(a + b) $$
+                
+                <p>Площадь через сторону и высоту:</p>
+                $$ S = a \cdot h_a = b \cdot h_b $$
+                
+                <p>Площадь через стороны и угол:</p>
+                $$ S = ab \sin \alpha $$
+                
+                <p>Площадь через диагонали и угол между ними:</p>
+                $$ S = \frac{1}{2} d_1 d_2 \sin \varphi $$
+            </div>
+
+            <h3>Диагонали параллелограмма</h3>
+            <div class="theorem-box">
+                <strong>Свойство диагоналей</strong>
+                <p>Диагонали параллелограмма точкой пересечения делятся пополам. Сумма квадратов диагоналей равна сумме квадратов всех сторон.</p>
+                $$ d_1^2 + d_2^2 = 2(a^2 + b^2) $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Длина диагоналей</strong>
+                <p>Диагонали можно выразить через стороны и угол между ними:</p>
+                $$ d_1 = \sqrt{a^2 + b^2 + 2ab \cos \alpha} $$
+                $$ d_2 = \sqrt{a^2 + b^2 - 2ab \cos \alpha} $$
+            </div>
+
+            <h3>Свойства параллелограмма</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Противоположные стороны</strong>
+                    <div>Параллельны и равны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Противоположные углы</strong>
+                    <div>Равны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма соседних углов</strong>
+                    <div>\( 180^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали</strong>
+                    <div>Делятся точкой пересечения пополам</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма углов</strong>
+                    <div>\( 360^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Центр симметрии</strong>
+                    <div>Точка пересечения диагоналей</div>
+                </div>
+            </div>
+
+            <h3>Признаки параллелограмма</h3>
+            <div class="info-box">
+                <strong>Четырёхугольник является параллелограммом, если:</strong>
+                <ul class="props">
+                    <li>Две противоположные стороны равны и параллельны</li>
+                    <li>Противоположные стороны попарно равны</li>
+                    <li>Противоположные углы попарно равны</li>
+                    <li>Диагонали точкой пересечения делятся пополам</li>
+                    <li>Сумма соседних углов равна 180°</li>
+                </ul>
+            </div>
+
+            <h3>Частные случаи</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Прямоугольник</strong>
+                    <div>Параллелограмм с прямыми углами</div>
+                </div>
+                <div class="property-item">
+                    <strong>Ромб</strong>
+                    <div>Параллелограмм с равными сторонами</div>
+                </div>
+                <div class="property-item">
+                    <strong>Квадрат</strong>
+                    <div>Параллелограмм с равными сторонами и прямыми углами</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

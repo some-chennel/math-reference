@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Свойства степеней и корней">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Степени и корни | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Степени и корни</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение степени</strong>
+                <p>Степенью числа \(a\) с натуральным показателем \(n\) называется произведение \(n\) множителей, каждый из которых равен \(a\).</p>
+                $$ a^n = \underbrace{a \cdot a \cdot ... \cdot a}_{n \text{ раз}} $$
+            </div>
+
+            <div class="info-box">
+                <strong>Определение корня</strong>
+                <p>Корнем \(n\)-й степени из числа \(a\) называется такое число, \(n\)-я степень которого равна \(a\).</p>
+                $$ \sqrt[n]{a} = b \quad \Leftrightarrow \quad b^n = a $$
+            </div>
+
+            <h3>Свойства степеней</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Степень с нулевым показателем</strong>
+                    <div>\( a^0 = 1 \), где \(a \neq 0\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Степень с единицей</strong>
+                    <div>\( a^1 = a \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Умножение степеней</strong>
+                    <div>\( a^m \cdot a^n = a^{m+n} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Деление степеней</strong>
+                    <div>\( \frac{a^m}{a^n} = a^{m-n} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Возведение степени в степень</strong>
+                    <div>\( (a^m)^n = a^{m \cdot n} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Степень произведения</strong>
+                    <div>\( (ab)^n = a^n \cdot b^n \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Степень частного</strong>
+                    <div>\( \left(\frac{a}{b}\right)^n = \frac{a^n}{b^n} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Отрицательная степень</strong>
+                    <div>\( a^{-n} = \frac{1}{a^n} \)</div>
+                </div>
+            </div>
+
+            <h3>Свойства корней</h3>
+            <div class="formula-block">
+                <p>Корень как степень с дробным показателем:</p>
+                $$ \sqrt[n]{a} = a^{\frac{1}{n}} $$
+                
+                <p>Корень из произведения:</p>
+                $$ \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b} $$
+                
+                <p>Корень из частного:</p>
+                $$ \sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}} $$
+                
+                <p>Корень из корня:</p>
+                $$ \sqrt[m]{\sqrt[n]{a}} = \sqrt[m \cdot n]{a} $$
+                
+                <p>Возведение корня в степень:</p>
+                $$ (\sqrt[n]{a})^m = \sqrt[n]{a^m} = a^{\frac{m}{n}} $$
+            </div>
+
+            <h3>Арифметический корень</h3>
+            <div class="theorem-box">
+                <strong>Определение</strong>
+                <p>Арифметическим корнем \(n\)-й степени из неотрицательного числа \(a\) называется неотрицательное число, \(n\)-я степень которого равна \(a\).</p>
+                $$ \sqrt[n]{a} \geq 0, \quad a \geq 0 $$
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Корень чётной степени</strong>
+                    <div>Существует только для \(a \geq 0\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Корень нечётной степени</strong>
+                    <div>Существует для любых \(a \in \mathbb{R}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Квадратный корень</strong>
+                    <div>\( \sqrt{a^2} = |a| \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Корень из квадрата</strong>
+                    <div>\( \sqrt[n]{a^n} = |a| \) (при чётном \(n\))</div>
+                </div>
+            </div>
+
+            <h3>Степени с рациональным показателем</h3>
+            <div class="formula-block">
+                <p>Определение степени с дробным показателем:</p>
+                $$ a^{\frac{m}{n}} = \sqrt[n]{a^m} $$
+                
+                <p>Свойства сохраняются:</p>
+                $$ a^{\frac{m}{n}} \cdot a^{\frac{p}{q}} = a^{\frac{m}{n} + \frac{p}{q}} $$
+                $$ (a^{\frac{m}{n}})^{\frac{p}{q}} = a^{\frac{m}{n} \cdot \frac{p}{q}} $$
+            </div>
+
+            <h3>Важные формулы сокращённого умножения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Квадрат суммы</strong>
+                    <div>\( (a + b)^2 = a^2 + 2ab + b^2 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Квадрат разности</strong>
+                    <div>\( (a - b)^2 = a^2 - 2ab + b^2 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Разность квадратов</strong>
+                    <div>\( a^2 - b^2 = (a - b)(a + b) \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Куб суммы</strong>
+                    <div>\( (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Куб разности</strong>
+                    <div>\( (a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3 \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма кубов</strong>
+                    <div>\( a^3 + b^3 = (a + b)(a^2 - ab + b^2) \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Разность кубов</strong>
+                    <div>\( a^3 - b^3 = (a - b)(a^2 + ab + b^2) \)</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

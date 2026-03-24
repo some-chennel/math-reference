@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства прямоугольника">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Прямоугольник | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Прямоугольник</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Прямоугольник — это параллелограмм, у которого все углы прямые. Прямоугольник является частным случаем параллелограмма и обладает всеми его свойствами.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Стороны</strong>
+                    <div>\(a, b\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагональ</strong>
+                    <div>\(d\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр</strong>
+                    <div>\(P\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь</strong>
+                    <div>\(S\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус описанной окружности</strong>
+                    <div>\(R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Угол между диагоналями</strong>
+                    <div>\(\varphi\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Периметр (сумма всех сторон):</p>
+                $$ P = 2(a + b) $$
+                
+                <p>Площадь через стороны:</p>
+                $$ S = a \cdot b $$
+                
+                <p>Диагональ через стороны (теорема Пифагора):</p>
+                $$ d = \sqrt{a^2 + b^2} $$
+                
+                <p>Площадь через диагонали и угол:</p>
+                $$ S = \frac{1}{2} d^2 \sin \varphi $$
+                
+                <p>Сторона через диагональ и другую сторону:</p>
+                $$ a = \sqrt{d^2 - b^2} $$
+            </div>
+
+            <h3>Диагонали прямоугольника</h3>
+            <div class="theorem-box">
+                <strong>Свойство диагоналей</strong>
+                <p>Диагонали прямоугольника равны и точкой пересечения делятся пополам. Точка пересечения диагоналей является центром описанной окружности.</p>
+                $$ d_1 = d_2 = d $$
+                $$ AO = BO = CO = DO = \frac{d}{2} = R $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Теорема о диагоналях</strong>
+                <p>Квадрат диагонали равен сумме квадратов двух смежных сторон.</p>
+                $$ d^2 = a^2 + b^2 $$
+            </div>
+
+            <h3>Свойства прямоугольника</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Противоположные стороны</strong>
+                    <div>Параллельны и равны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Все углы</strong>
+                    <div>Прямые (\(90^\circ\))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали</strong>
+                    <div>Равны и делятся пополам</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма углов</strong>
+                    <div>\( 360^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Ось симметрии</strong>
+                    <div>2 оси (через середины противоположных сторон)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Центр симметрии</strong>
+                    <div>Точка пересечения диагоналей</div>
+                </div>
+            </div>
+
+            <h3>Описанная окружность</h3>
+            <div class="formula-block">
+                <p>Радиус описанной окружности:</p>
+                $$ R = \frac{d}{2} = \frac{\sqrt{a^2 + b^2}}{2} $$
+                
+                <p>Площадь описанной окружности:</p>
+                $$ S_{окр} = \pi R^2 = \frac{\pi (a^2 + b^2)}{4} $$
+                
+                <p>Длина описанной окружности:</p>
+                $$ C = 2\pi R = \pi \sqrt{a^2 + b^2} $$
+            </div>
+
+            <h3>Признаки прямоугольника</h3>
+            <div class="info-box">
+                <strong>Параллелограмм является прямоугольником, если:</strong>
+                <ul class="props">
+                    <li>Один из углов равен \(90^\circ\)</li>
+                    <li>Диагонали равны</li>
+                    <li>Три угла прямые</li>
+                    <li>Квадрат диагонали равен сумме квадратов двух смежных сторон</li>
+                </ul>
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Сторона через площадь</strong>
+                    <div>\( a = \frac{S}{b} \), \( b = \frac{S}{a} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр через площадь</strong>
+                    <div>\( P = 2\left(a + \frac{S}{a}\right) \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагональ через площадь</strong>
+                    <div>\( d = \sqrt{a^2 + \left(\frac{S}{a}\right)^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Отношение сторон</strong>
+                    <div>\( \frac{a}{b} \) определяет форму прямоугольника</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

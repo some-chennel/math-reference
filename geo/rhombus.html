@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства ромба">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Ромб | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Ромб</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Ромб — это параллелограмм, у которого все стороны равны. Ромб является частным случаем параллелограмма и обладает всеми его свойствами.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Сторона</strong>
+                    <div>\(a\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали</strong>
+                    <div>\(d_1, d_2\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Периметр</strong>
+                    <div>\(P\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь</strong>
+                    <div>\(S\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанной окружности</strong>
+                    <div>\(r\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Периметр (сумма всех сторон):</p>
+                $$ P = 4a $$
+                
+                <p>Площадь через сторону и высоту:</p>
+                $$ S = a \cdot h $$
+                
+                <p>Площадь через диагонали:</p>
+                $$ S = \frac{1}{2} d_1 d_2 $$
+                
+                <p>Площадь через сторону и угол:</p>
+                $$ S = a^2 \sin \alpha $$
+                
+                <p>Сторона через диагонали:</p>
+                $$ a = \sqrt{\left(\frac{d_1}{2}\right)^2 + \left(\frac{d_2}{2}\right)^2} = \frac{\sqrt{d_1^2 + d_2^2}}{2} $$
+            </div>
+
+            <h3>Диагонали ромба</h3>
+            <div class="theorem-box">
+                <strong>Свойство диагоналей</strong>
+                <p>Диагонали ромба взаимно перпендикулярны, точкой пересечения делятся пополам и являются биссектрисами углов ромба.</p>
+                $$ d_1 \perp d_2 $$
+                $$ d_1^2 + d_2^2 = 4a^2 $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Длина диагоналей</strong>
+                <p>Диагонали можно выразить через сторону и угол:</p>
+                $$ d_1 = a\sqrt{2 + 2\cos \alpha} = 2a \cos \frac{\alpha}{2} $$
+                $$ d_2 = a\sqrt{2 - 2\cos \alpha} = 2a \sin \frac{\alpha}{2} $$
+            </div>
+
+            <h3>Свойства ромба</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Все стороны</strong>
+                    <div>Равны (\(a = b = c = d\))</div>
+                </div>
+                <div class="property-item">
+                    <strong>Противоположные стороны</strong>
+                    <div>Параллельны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Противоположные углы</strong>
+                    <div>Равны</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма соседних углов</strong>
+                    <div>\( 180^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали</strong>
+                    <div>Перпендикулярны и делятся пополам</div>
+                </div>
+                <div class="property-item">
+                    <strong>Диагонали — биссектрисы</strong>
+                    <div>Делят углы пополам</div>
+                </div>
+            </div>
+
+            <h3>Вписанная окружность</h3>
+            <div class="formula-block">
+                <p>Радиус вписанной окружности через площадь и периметр:</p>
+                $$ r = \frac{S}{p} = \frac{2S}{P} = \frac{S}{2a} $$
+                
+                <p>Радиус через высоту:</p>
+                $$ r = \frac{h}{2} $$
+                
+                <p>Радиус через диагонали:</p>
+                $$ r = \frac{d_1 d_2}{2\sqrt{d_1^2 + d_2^2}} $$
+                
+                <p>Радиус через сторону и угол:</p>
+                $$ r = \frac{a \sin \alpha}{2} $$
+            </div>
+
+            <h3>Признаки ромба</h3>
+            <div class="info-box">
+                <strong>Параллелограмм является ромбом, если:</strong>
+                <ul class="props">
+                    <li>Две смежные стороны равны</li>
+                    <li>Диагонали перпендикулярны</li>
+                    <li>Диагональ является биссектрисой угла</li>
+                    <li>Все высоты равны</li>
+                </ul>
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Высота через сторону</strong>
+                    <div>\( h = a \sin \alpha \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота через диагонали</strong>
+                    <div>\( h = \frac{d_1 d_2}{\sqrt{d_1^2 + d_2^2}} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сторона через высоту</strong>
+                    <div>\( a = \frac{h}{\sin \alpha} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма квадратов диагоналей</strong>
+                    <div>\( d_1^2 + d_2^2 = 4a^2 \)</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства произвольного треугольника">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Треугольник | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Произвольный треугольник</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                Треугольник — геометрическая фигура, образованная тремя отрезками, соединяющими три точки, не лежащие на одной прямой.
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Стороны</strong>
+                    <div>\(a, b, c\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Углы</strong>
+                    <div>\(A, B, C\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h_a, h_b, h_c\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Полупериметр</strong>
+                    <div>\(p = \frac{a+b+c}{2}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>R (описанная)</strong>
+                    <div>Радиус описанной окружности</div>
+                </div>
+                <div class="property-item">
+                    <strong>r (вписанная)</strong>
+                    <div>Радиус вписанной окружности</div>
+                </div>
+            </div>
+
+            <h3>Площадь</h3>
+            <div class="formula-block">
+                <p>Через высоту:</p>
+                $$ S = \frac{1}{2} c \cdot h_c $$
+                
+                <p>Через стороны и угол:</p>
+                $$ S = \frac{1}{2} ab \sin \gamma $$
+                
+                <p>Формула Герона:</p>
+                $$ S = \sqrt{p(p-a)(p-b)(p-c)} $$
+                
+                <p>Через радиусы:</p>
+                $$ S = \frac{abc}{4R} = p \cdot r $$
+            </div>
+
+            <h3>Теоремы</h3>
+            
+            <div class="theorem-box">
+                <strong>Теорема косинусов</strong>
+                <p>Квадрат любой стороны треугольника равен сумме квадратов двух других сторон минус удвоенное произведение этих сторон на косинус угла между ними.</p>
+                $$ c^2 = a^2 + b^2 - 2ab \cos \alpha $$
+                $$ a^2 = b^2 + c^2 - 2bc \cos A $$
+                $$ b^2 = a^2 + c^2 - 2ac \cos B $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Теорема синусов</strong>
+                <p>Стороны треугольника пропорциональны синусам противолежащих углов. Отношение стороны к синусу противолежащего угла равно диаметру описанной окружности.</p>
+                $$ \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R $$
+            </div>
+
+            <h3>Свойства</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Неравенство треугольника</strong>
+                    <div>Сумма любых двух сторон больше третьей: \( a + b > c \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Сумма углов</strong>
+                    <div>Сумма внутренних углов равна \( 180^\circ \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Внешний угол</strong>
+                    <div>Внешний угол равен сумме двух внутренних, не смежных с ним</div>
+                </div>
+                <div class="property-item">
+                    <strong>Против большей стороны</strong>
+                    <div>Против большей стороны лежит больший угол</div>
+                </div>
+            </div>
+
+            <h3>Элементы треугольника</h3>
+            <div class="formula-block">
+                <p>Медиана (отрезок от вершины к середине противоположной стороны):</p>
+                $$ m_a = \frac{1}{2}\sqrt{2b^2 + 2c^2 - a^2} $$
+                
+                <p>Биссектриса (делит угол пополам):</p>
+                $$ l_a = \frac{2bc \cos \frac{A}{2}}{b+c} $$
+                
+                <p>Высота (перпендикуляр к стороне):</p>
+                $$ h_a = \frac{2S}{a} = b \sin C = c \sin B $$
+            </div>
+
+            <h3>Окружности</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус описанной окружности</strong>
+                    <div>\( R = \frac{abc}{4S} = \frac{a}{2\sin A} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус вписанной окружности</strong>
+                    <div>\( r = \frac{S}{p} = \sqrt{\frac{(p-a)(p-b)(p-c)}{p}} \)</div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>

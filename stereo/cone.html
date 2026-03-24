@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Формулы и свойства конуса">
+    <meta name="theme-color" content="#2c3e50">
+    <title>Конус | Математический справочник</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1><a href="../index.html">Математический справочник</a></h1>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">Назад к темам</a>
+        
+        <article class="topic-card">
+            <div class="topic-header">
+                <h2>Конус</h2>
+            </div>
+
+            <div class="info-box">
+                <strong>Определение</strong>
+                <p>Конус — геометрическое тело, образованное всеми лучами, исходящими из одной точки (вершины) и пересекающими некоторую плоскую поверхность (основание). Круглый конус — тело вращения, полученное вращением прямоугольного треугольника вокруг одного из катетов.</p>
+            </div>
+
+            <h3>Обозначения</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус основания</strong>
+                    <div>\(R\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота</strong>
+                    <div>\(h\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Образующая</strong>
+                    <div>\(l\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Площадь основания</strong>
+                    <div>\(S_{осн}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Боковая поверхность</strong>
+                    <div>\(S_{бок}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Полная поверхность</strong>
+                    <div>\(S_{полн}\)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Объём</strong>
+                    <div>\(V\)</div>
+                </div>
+            </div>
+
+            <h3>Основные формулы</h3>
+            <div class="formula-block">
+                <p>Площадь основания (круг):</p>
+                $$ S_{осн} = \pi R^2 $$
+                
+                <p>Площадь боковой поверхности:</p>
+                $$ S_{бок} = \pi R l $$
+                
+                <p>Площадь полной поверхности:</p>
+                $$ S_{полн} = S_{бок} + S_{осн} = \pi R l + \pi R^2 = \pi R(l + R) $$
+                
+                <p>Объём конуса:</p>
+                $$ V = \frac{1}{3} S_{осн} \cdot h = \frac{1}{3} \pi R^2 h $$
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="theorem-box">
+                <strong>Теорема Пифагора для конуса</strong>
+                <p>В осевом сечении конуса образуется прямоугольный треугольник, где образующая — гипотенуза, а радиус и высота — катеты.</p>
+                $$ l^2 = R^2 + h^2 $$
+                $$ l = \sqrt{R^2 + h^2} $$
+            </div>
+
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Образующая через радиус и высоту</strong>
+                    <div>\( l = \sqrt{R^2 + h^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Радиус через образующую и высоту</strong>
+                    <div>\( R = \sqrt{l^2 - h^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота через образующую и радиус</strong>
+                    <div>\( h = \sqrt{l^2 - R^2} \)</div>
+                </div>
+            </div>
+
+            <h3>Сечения конуса</h3>
+            <div class="theorem-box">
+                <strong>Осевое сечение</strong>
+                <p>Сечение конуса плоскостью, проходящей через вершину и центр основания, является равнобедренным треугольником.</p>
+                $$ S_{осев} = \frac{1}{2} \cdot 2R \cdot h = R h $$
+            </div>
+
+            <div class="theorem-box">
+                <strong>Поперечное сечение</strong>
+                <p>Сечение конуса плоскостью, перпендикулярной оси, является кругом.</p>
+                $$ S_{попер} = \pi r^2 $$
+                <p>где \(r\) — радиус сечения на данной высоте.</p>
+            </div>
+
+            <div class="info-box">
+                <strong>Наклонное сечение</strong>
+                <p>В зависимости от угла наклона секущей плоскости сечение может быть:</p>
+                <ul class="props">
+                    <li>Эллипсом (угол меньше угла образующей)</li>
+                    <li>Параболой (угол равен углу образующей)</li>
+                    <li>Гиперболой (угол больше угла образующей)</li>
+                </ul>
+            </div>
+
+            <h3>Развёртка конуса</h3>
+            <div class="formula-block">
+                <p>Развёртка боковой поверхности конуса — круговой сектор:</p>
+                $$ \text{Радиус сектора} = l $$
+                $$ \text{Длина дуги} = 2\pi R $$
+                $$ \text{Угол сектора} = \frac{360^\circ \cdot R}{l} $$
+            </div>
+
+            <h3>Вписанные и описанные фигуры</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Пирамида, вписанная в конус</strong>
+                    <div>Основание — многоугольник в круге, вершина совпадает</div>
+                </div>
+                <div class="property-item">
+                    <strong>Пирамида, описанная около конуса</strong>
+                    <div>Основание — многоугольник, описанный около круга</div>
+                </div>
+                <div class="property-item">
+                    <strong>Шар, вписанный в конус</strong>
+                    <div>Касается основания и боковой поверхности</div>
+                </div>
+                <div class="property-item">
+                    <strong>Конус, вписанный в шар</strong>
+                    <div>Вершина и окружность основания на сфере</div>
+                </div>
+            </div>
+
+            <h3>Соотношения между элементами</h3>
+            <div class="property-list">
+                <div class="property-item">
+                    <strong>Радиус через объём</strong>
+                    <div>\( R = \sqrt{\frac{3V}{\pi h}} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Высота через объём</strong>
+                    <div>\( h = \frac{3V}{\pi R^2} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Образующая через площадь</strong>
+                    <div>\( l = \frac{S_{бок}}{\pi R} \)</div>
+                </div>
+                <div class="property-item">
+                    <strong>Угол при вершине</strong>
+                    <div>\( \sin \frac{\alpha}{2} = \frac{R}{l} \)</div>
+                </div>
+            </div>
+
+            <h3>Применение</h3>
+            <div class="info-box">
+                <strong>Где встречается конус</strong>
+                <ul class="props">
+                    <li>Технические детали (воронки, наконечники)</li>
+                    <li>Архитектурные элементы (башни, крыши)</li>
+                    <li>Природные объекты (горы, вулканы)</li>
+                    <li>Ёмкости (конусные резервуары)</li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Математический справочник</p>
+        <p>2026</p>
+    </footer>
+
+    <script src="../../js/header.js"></script>
+
+</body>
+</html>
